@@ -1,0 +1,12 @@
+import speech_recognition as sr
+
+listner = sr.Recognizer
+
+
+try:
+  with sr.Microphone() as source:
+    voice = listeer.listen(source)
+    command = listner.recognizer_google(voice)
+    print(command)
+except:
+  pass
