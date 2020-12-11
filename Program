@@ -21,8 +21,8 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'siri' in command:
-                command = command.replace('siri', '')
+            if 'sam' in command:
+                command = command.replace('sam', '')
                 print(command)
     except:
         pass
