@@ -21,15 +21,15 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'sam' in command:
-                command = command.replace('sam', '')
+            if 'kelex' in command:
+                command = command.replace('kelex', '')
                 print(command)
     except:
         pass
     return command
 
 
-def run_siri():
+def run_kelex():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -52,4 +52,4 @@ def run_siri():
     else:
         talk('please sa the command again.')
 while True:
-    run_siri()
+    run_kelex()
